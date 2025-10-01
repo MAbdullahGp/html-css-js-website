@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character encoding and viewport settings -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PVA Marketplace</title>
+
+    <!-- Bootstrap CSS for styling -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Link to custom styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header Section with Navigation -->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white bg-opacity-95 fixed-top">
+        <div class="container">
+          <!-- Brand name and link -->
+          <a class="navbar-brand fw-bold text-primary" href="#">PVA Market</a>
+          <!-- Navbar toggle button for mobile -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Navbar links -->
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+              <li class="nav-item"><a class="nav-link" href="#support">Support</a></li>
+            </ul>
+            <!-- Cart button with item count badge -->
+            <button class="btn cart-btn position-relative" id="cartBtn">🛒
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary cart-count"></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <!-- Main Content Section -->
+    <main>
+      <!-- Hero Section with background and Call-to-Action button -->
+      <section class="hero d-flex align-items-center justify-content-center text-white">
+        <div class="container text-center">
+          <h1 class="display-2 mb-4 animate_animated animate_fadeIn">Premium Verified Accounts</h1>
+          <p class="lead mb-4 animate_animated animate_slideInUp">Instant access to phone-verified accounts for your business needs</p>
+          <button class="btn btn-primary btn-lg pulse-animation" id="getStartedBtn">Get Started</button>
+        </div>
+      </section>
+
+      <!-- Services Section where dynamic content will be loaded -->
+      <section id="services" class="py-5">
+        <div class="container">
+          <h2 class="text-center mb-5">Our Services</h2>
+          <!-- Dynamic services grid (content added via JavaScript) -->
+          <div class="row g-4" id="servicesGrid"></div>
+        </div>
+      </section>
+
+      <!-- Features Section highlighting key selling points -->
+      <section id="features" class="py-5 bg-light">
+        <div class="container">
+          <h2 class="text-center mb-5">Why Choose Us</h2>
+          <div class="row g-4">
+            <!-- Feature cards with icons and descriptions -->
+            <div class="col-md-3 col-sm-6">
+              <div class="card h-100 border-0 text-center">
+                <div class="card-body">
+                  <div class="display-4 mb-3">🔒</div>
+                  <h3>Secure Verification</h3>
+                  <p>Phone-verified accounts for safety</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="card h-100 border-0 text-center">
+                <div class="card-body">
+                  <div class="display-4 mb-3">⚡</div>
+                  <h3>Instant Delivery</h3>
+                  <p>Quick account setup</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="card h-100 border-0 text-center">
+                <div class="card-body">
+                  <div class="display-4 mb-3">💰</div>
+                  <h3>Best Prices</h3>
+                  <p>Affordable service options</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="card h-100 border-0 text-center">
+                <div class="card-body">
+                  <div class="display-4 mb-3">🔄</div>
+                  <h3>24/7 Support</h3>
+                  <p>Always here to help</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Customer Reviews Section -->
+    <section class="reviews" id="reviews">
+      <h2>What Our Customers Say</h2>
+      <div class="reviews-grid">
+        <!-- Individual customer reviews -->
+        <div class="review-item">
+          <img src="C1.png" alt="Customer 1" />
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          <p>"This platform made it so easy to get verified accounts. Highly recommended!"</p>
+          <h4>John Doe</h4>
+        </div>
+        <div class="review-item">
+          <img src="C2.png" alt="Customer 2" />
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          <p>"Quick delivery and great support."</p>
+          <h4>Alexia</h4>
+        </div>
+        <div class="review-item">
+          <img src="C3.png" alt="Customer 3" />
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          <p>"Affordable and reliable service. I've been using these accounts for months."</p>
+          <h4>Michael Lee</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section with Contact Info and Payment Methods -->
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Contact Us</h3>
+            <p>support@pvamarket.com</p>
+          </div>
+          <div class="col-md-6">
+            <h3>Payment Methods</h3>
+            <div class="fs-4">💳 💰 ₿</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Cart Modal Section for viewing and checking out cart items -->
+    <div class="modal fade" id="cartModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Your Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Cart Items will be dynamically inserted here -->
+            <div id="cartItems" class="mb-3"></div>
+            <!-- Total Amount -->
+            <div class="d-flex justify-content-between">
+              <span>Total:</span>
+              <span id="cartTotalAmount">$0.00</span>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!-- Close button and Checkout button -->
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" id="checkoutBtn">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and other custom scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="services.js"></script>
+    <script src="cart.js"></script>
+    <script src="animations.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
